@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.adae.justinelee.adaecompanion"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="1">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/adaelogo"
+        android:label="adae"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:name="com.adae.justinelee.adaecompanion.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.adae.justinelee.adaecompanion.QrCode"/>
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode"/>
+
+        <activity
+            android:name="com.adae.justinelee.adaecompanion.Scan"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.adae.justinelee.adaecompanion.TransactionsList">
+        </activity>
+        <activity android:name="com.adae.justinelee.adaecompanion.Receipt">
+        </activity>
+        <activity android:name="com.adae.justinelee.adaecompanion.Success">
+        </activity>
+        <activity android:name="com.adae.justinelee.adaecompanion.Error">
+        </activity>
+    </application>
+
+</manifest>

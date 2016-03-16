@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/darkgreyborder"
+    >
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="159dp"
+        android:layout_height="159dp"
+        android:background="#fff"
+        android:scaleType="center"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/transactiontitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#469df6"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/picture"
+        android:layout_marginTop="5dp"/>
+    <ImageView
+        android:id="@+id/userprofile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/picture"
+        android:layout_below="@id/transactiontitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFF"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userprofile"
+        android:layout_toRightOf="@id/picture"
+        android:text="apsidjfoisajdfosajdfoisajdfoiasjaoijsdfoisajfoisaj uibiuhiuhiuhiuhiuhiuhi"
+        android:textColor="#4A4A4A"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        />
+    <TextView
+        android:id="@+id/partnername"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Josh"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#4A4A4A"
+        android:layout_toRightOf="@id/userprofile"
+        android:layout_below="@id/transactiontitle"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+
+</RelativeLayout>

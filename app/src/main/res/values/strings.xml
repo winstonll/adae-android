@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AdaeCompanion</string>
+    <string name="privacy"><font fgcolor="white"><a href="https://adae.co/privacy">Privacy Policy</a></font></string>
+    <string name="terms"><font fgcolor="white"><a href="https://adae.co/terms">Terms and Conditions</a></font></string>
+    <string name="title_activity_scan">Scan</string>
+</resources>

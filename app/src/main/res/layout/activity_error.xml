@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.adae.justinelee.adaecompanion.Error">
+    <TextView
+        android:id="@+id/incorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error! This is an incorrect Qr Code!"
+        android:textSize="24sp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Scan Again"
+        android:textSize="18sp"
+        android:layout_below="@id/incorrect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignParentBottom="true"
+        android:onClick="toScan">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="#FF2641"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Try Again"
+                android:textSize="24sp"
+                android:textColor="#FFF"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
